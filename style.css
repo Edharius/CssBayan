@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    font-size: 3vw;
+}
+
+.wrapper {
+    margin-top: 5vh;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.accordion {
+    width: 40vw;
+    border: 1px solid red;
+    height: 90vh;
+}
+
+.accordion__content__elem__title{
+    border-bottom: 0.3vh solid rgb(170, 170, 170);
+}
+
+.accordion__content__elem {
+    width: 100%;
+    height: 4vw;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.3vh solid rgb(170, 170, 170);
+    transition: 1s;
+}
+
+.accordion__content__elem:hover {
+    height: 30vh;
+}
