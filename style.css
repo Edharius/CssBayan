@@ -4,19 +4,14 @@
 }
 
 .wrapper {
-    margin-top: 5vh;
-    width: 100vw;
-    height: 100vh;
+    margin-top: 2vh;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
-
-
 .accordion {
-    width: 40vw;
-    border: 1px solid red;
-    height: 90vh;
+    width: 60vw;
 }
 
 .accordion__content__elem__title{
@@ -25,7 +20,7 @@
 
 .accordion__content__elem {
     width: 100%;
-    height: 4vw;
+    height: 3.5vw;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -33,9 +28,38 @@
     transition: 1s;
 }
 
-.accordion__content__elem:hover {
-    height: 30vh;
+.accordion__content__elem__body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
+
+.mems {
+    transition: 4s;
+    opacity: 0;
+}
+.accordion__content__elem_1 {
+    height: 18vw;
+    cursor: pointer;
+}
+
+.mems_1 {
+    width: 15vw;
+    height: 15vw;
+}
+
+.accordion__content__elem:hover {
+    height: 19vw;
+}
+
+.accordion__content__elem:hover .mems{
+    display: block;
+    width: 15vw;
+    height: 15vw;
+    opacity: 100;
+}
+
 .accordion__content__elem__header {
     display: flex;
     justify-content: space-between;
@@ -48,6 +72,10 @@
     transform: rotate(45deg);
     transition: 1s;
 }
+.icon_1 {
+    height: 1.5vw;
+    width: 1.5vw;
+}
 
 .accordion__content:hover .icon {
     display: block;
@@ -57,3 +85,4 @@
 .accordion__content__elem:hover .icon {
     transform: rotate(900deg);
 }
+
